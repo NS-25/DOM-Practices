@@ -54,10 +54,11 @@
 // })
 
 
+const content = document.getElementById("demo");
 
 
 const myFun = () => {
-  document.getElementById("demo").innerHTML = "Content Changed!";
+  return content.innerHTML = "Content Changed!";
 }
 
 console.log("hello, I am js")
