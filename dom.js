@@ -56,4 +56,8 @@
 
 
 
+const myFun = () => {
+  document.getElementById("demo").innerHTML = "Content Changed!";
+}
 
+console.log("hello, I am js")
