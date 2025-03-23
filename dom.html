@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button {
+      display: block;
+      width: 200px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      margin-block: 1em;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: coral;
+    }
+
+    ul {
+      padding-left: .5em;
+      list-style-type: none;
+      display: flex;
+    }
+
+    li {
+      padding: .5em 1em;
+      border: solid 1px gray;
+      max-width: max-content;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    .track {
+      color: coral;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>
+    Currently Playing ->
+    <span class="track">None</span>
+  </h2>
+  <ul>
+    <li class="list">1: Linkin Park</li>
+    <li class="list">2: Queens</li>
+    <li class="list">3: AC/DC</li>
+  </ul>
+  <button class="btn">Play</button>
+  <button class="btn">Pause</button>
+  <button class="btn">Reset</button>
+
+  <script>
+
+    const btnColor = document.querySelectorAll(".btn");
+    // btnColor[0].addEventListener("click", changeColor);
+    changeColor()
+
+    function changeColor() {
+      for (let i = 0; i < btnColor.length; i++) {
+        btnColor[i].addEventListener('click', () => {
+          if (btnColor[i].classList.contains("active")) {
+            btnColor[i].classList.remove('active');
+          } else {
+            // remove previous
+            removeColor();
+            btnColor[i].classList.add("active");
+          }
+        });
+
+      }
+    }
+
+    function removeColor() {
+      for (let i = 0; i < btnColor.length; i++) {
+        btnColor[i].classList.remove('active');
+
+      }
+    }
+    // second step////////////////////////////////////
+    let h2Element = document.querySelector('.track');
+    let liElement = document.querySelectorAll(".list");
+
+    liElement.forEach((ele) => {
+      ele.addEventListener("click", () => {
+        h2Element.textContent = ele.innerText;
+        // console.dir(ele);
+        // console.log(h2Element);
+      })
+    })
+
+
+  </script>
+</body>
+
+</html> -->
